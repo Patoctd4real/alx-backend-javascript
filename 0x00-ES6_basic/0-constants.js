@@ -1,15 +1,15 @@
-export function startChore() {
-  const chore = 'I prefer const when I can.';
-  return chore;
+export function taskFirst() {
+  const task = 'I prefer const when I can.';
+  return task;
 }
 
-export function endMost() {
+export function getLast() {
   return ' is okay';
 }
 
-export function upcomingTask() {
-  let param = 'But sometimes let';
-  param += endMost();
+export function taskNext() {
+  let combination = 'But sometimes let';
+  combination += getLast();
 
-  return param;
+  return combination;
 }
