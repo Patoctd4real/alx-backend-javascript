@@ -1,6 +1,16 @@
-export default function updateUniqueItems(items) {
-  if (!(items instanceof Map)) throw Error('Cannot process');
-  const result = items;
-  for (const [p, z] of items.entries()) if (z === 1) result.set(p, 100);
-  return result;
-}
+/* eslint-disable */
+const updateUniqueItems = (map) => {
+  if (!(map instanceof Map)) {
+    throw new Error('Cannot process');
+  }
+
+  for (const [key, value] of map) {
+    if (value === 1) {
+      map.set(key, 100);
+    }
+  }
+
+  return map;
+};
+
+export default updateUniqueItems;

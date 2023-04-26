@@ -1,12 +1,13 @@
-export default function groceriesList() {
-  const listOFItems = [
+const groceriesList = () => {
+  const fruits = new Map([
     ['Apples', 10],
     ['Tomatoes', 10],
     ['Pasta', 1],
     ['Rice', 1],
     ['Banana', 5],
-  ];
-  const z = new Map();
-  for (const p of listOFItems) m.set(p[0], p[1]);
-  return z;
-}
+  ]);
+
+  return fruits;
+};
+
+export default groceriesList;
